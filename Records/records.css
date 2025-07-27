@@ -1,0 +1,86 @@
+/* General Styles */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #000;
+  font-family: 'Segoe UI', sans-serif;
+  color: #fff;
+}
+
+.header {
+  text-align: center;
+  padding: 50px 0;
+  background-color: #F3E9DC;
+  font-size: 2.8rem;
+  font-weight: bold;
+  color: #000;
+  border-bottom: 3px solid #FAEB92;
+}
+
+/* Main Layout */
+.records-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 50px;
+  padding: 60px 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.record-section {
+  flex: 1 1 45%;
+  min-width: 320px;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 2rem;
+  color: #F3E9DC;
+  margin-bottom: 30px;
+  border-bottom: 2px solid #FAEB92;
+  padding-bottom: 10px;
+}
+
+/* Record Card */
+.record-card {
+  background-color: #111;
+  border: 2px solid #F3E9DC;
+  border-radius: 16px;
+  margin: 20px auto;
+  padding: 24px 20px;
+  color: #fff;
+  width: 90%;
+  max-width: 350px;
+  text-align: center;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.record-card:hover {
+  transform: scale(1.04);
+  box-shadow: 0 12px 24px rgba(250, 235, 146, 0.2);
+}
+
+.record-card h3 {
+  color: #FAEB92;
+  margin-bottom: 12px;
+  font-size: 1.2rem;
+}
+
+.record-card p {
+  margin: 6px 0;
+  font-size: 1rem;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .records-wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .record-section {
+    width: 100%;
+  }
+}

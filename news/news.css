@@ -1,0 +1,119 @@
+body{
+    margin: 0%;
+    background-color: black;
+}
+
+header{
+    background-color: #FBF5DE;
+    padding: 30px;
+    text-align: center;
+    font-size: xx-large;
+}
+.news-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  padding: 40px 20px;
+}
+
+.news-card {
+  background-color: #1e1e1e;
+  border-radius: 12px;
+  display: flex;
+  width: 80%;
+  max-width: 900px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border 0.3s ease;
+  border: 2px solid transparent;
+}
+
+.news-card:hover {
+  transform: translateY(-5px);
+  border: 2px solid #FBF5DE;
+  box-shadow: 0 0 15px #FBF5DE, 0 0 30px rgba(255, 76, 96, 0.3);
+}
+
+.news-card img {
+  width: 300px;
+  height: auto;
+  object-fit: cover;
+}
+
+.news-content {
+  padding: 20px;
+  flex: 1;
+}
+
+.news-content h2 {
+  margin-top: 0;
+  color: #FBF5DE;
+  font-size: 1.6rem;
+}
+
+.news-content p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #e0e0e0;
+}
+
+.news-content a {
+  display: inline-block;
+  margin-top: 12px;
+  padding: 8px 16px;
+  background: linear-gradient(to right, #4682A9, #91C8E4);
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: background 0.3s ease;
+}
+
+.news-content a:hover {
+  background: linear-gradient(to right, #4682A9, #91C8E4);
+}
+
+.read-more-btn{
+  background-color: #ff4c60;
+  color: white;
+  border-radius: 5px;
+  padding: 6px;
+  
+}
+/* Popup styling */
+.popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #222;
+    color: #fff;
+    padding: 20px 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.6);
+    z-index: 1000;
+    display: none;
+    width: 300px;
+    text-align: center;
+}
+
+.popup button {
+    margin-top: 15px;
+    padding: 8px 14px;
+    background-color: #0064b0;
+    border: none;
+    border-radius: 6px;
+    color: white;
+    cursor: pointer;
+}
+
+.popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+    display: none;
+}

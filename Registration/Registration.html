@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Football Network - Register</title>
+  <link rel="stylesheet" href="Registration.css">
+
+</head>
+<body>
+  
+  <div class="container">
+    <h2>Join the Football Network</h2>
+   <form method="post" action="success.html" id="login-form">
+      <label for="fullname">Full Name</label>
+      <input type="text" id="fullname" name="fullname" required />
+
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" required />
+
+      <label for="password">Password</label>
+      <input type="password" id="password" name="password" required />
+
+      <label for="team">Favorite Football Team</label>
+      <input type="text" id="team" name="team" />
+
+      <label for="country">Country</label>
+      <select id="country" name="country" required>
+        <option value="">-- Select Country --</option>
+        <option value="india">India</option>
+        <option value="england">England</option>
+        <option value="brazil">Brazil</option>
+        <option value="germany">Germany</option>
+        <option value="argentina">Argentina</option>
+      </select>
+
+      <label>
+        <input type="checkbox" name="subscribe" />
+        Subscribe to weekly match updates
+      </label>
+
+      <button type="submit">Register</button>
+      <p>Already have an account? <a href="../login/login.html">Login here</a>.</p>
+    </form>
+  </div>
+
+  <script src="Registration.js"></script>
+</body>
+</html>

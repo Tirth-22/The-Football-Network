@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FIFA | News</title>
+    <link rel="stylesheet" href="news.css">
+</head>
+
+<body>
+    <script src="readmore.js"></script>
+    <header>Latest News..</header>
+
+    <main class="news-container">
+        <article class="news-card">
+            <img src="../images/news1.jpeg" alt="News Image 1">
+            <div class="news-content">
+                <h2>Portugal Crowned Nations League Champions</h2>
+                <p>Portugal clinched the UEFA Nations League title with a dramatic 2-1 victory over Spain. Ronaldo
+                    played a key role in the win.</p>
+                <button class="read-more-btn"
+                    onclick="showPopup('Portugal vs Spain: This is a high-stakes match between two football giants!')">
+                    Read More
+                </button>
+            </div>
+        </article>
+
+        <article class="news-card">
+            <img src="../images/news2.jpeg" alt="News Image 2">
+            <div class="news-content">
+                <h2>Mbappé Joins Real Madrid in Record Transfer</h2>
+                <p>Kylian Mbappé completes a historic move to Real Madrid, breaking the world transfer record and
+                    exciting Los Blancos fans worldwide.</p>
+                <button class="read-more-btn"
+                    onclick="showPopup('Mbappé joins Real Madrid for a record fee, sparking massive buzz in football!')">
+                    Read More
+                </button>
+            </div>
+        </article>
+
+        <article class="news-card">
+            <img src="../images/news3.jpeg" alt="News Image 3">
+            <div class="news-content">
+                <h2>Champions League Final Set: PSG vs Inter</h2>
+                <p>The stage is set for a thrilling Champions League final as PSG take on Inter Milan after intense
+                    semi-final battles.</p>
+                <button class="read-more-btn"
+                    onclick="showPopup('The Champions League Final between PSG and Inter promises to be a classic!')">
+                    Read More
+                </button>
+            </div>
+        </article>
+    </main>
+
+    <!-- Popup HTML -->
+    <div class="popup-overlay" id="popupOverlay"></div>
+
+    <div class="popup" id="popupBox">
+        <p id="popupMessage"></p>
+        <button onclick="closePopup()">Close</button>
+    </div>
+</body>
+</html>   

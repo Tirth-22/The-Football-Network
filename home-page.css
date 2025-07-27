@@ -1,0 +1,208 @@
+/* Reset and base styles */
+body {
+  margin: 0;
+  background-color: #0a0a0a;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Header styles */
+.header {
+  background-color: #F2F2F2;
+  color: #141414;
+  padding: 15px;
+  text-align: center;
+}
+
+/* Main navigation bar */
+.main-bar {
+  border-bottom: 1.6px solid #00b7ff;
+}
+
+/* Right side nav */
+.right-nav {
+  text-align: right;
+  padding: 10px;
+  background-color: #B6B09F;
+}
+
+.nav-menu-right a {
+  text-decoration: none;
+  color: #3e3d3d;
+  font-weight: bold;
+  padding: 10px;
+}
+
+/* Left nav section */
+.left-nav {
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+}
+
+.logo {
+  color: #287ec1;
+  font-size: x-large;
+  font-weight: bold;
+  padding: 30px;
+}
+
+.nav-2nd-bar {
+  padding: 23px;
+  width: 75%;
+}
+
+.nav-2nd-bar a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  padding: 10px;
+}
+
+.nav-wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  width: 50%;
+}
+
+.nav-menu-left {
+  display: flex;
+  column-gap: 20px;
+}
+
+/* Club Match Highlight Section */
+.club-box {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: stretch;
+  margin: 40px auto;
+  width: 90%;
+  max-width: 1200px;
+  background-color: #1c1c1c;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.7);
+}
+
+.left-box {
+  padding: 30px 40px;
+  flex: 1;
+  min-width: 300px;
+}
+
+.left-box h3 {
+  font-size: 1rem;
+  color: #8ecae6;
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+
+.left-box h2 {
+  font-size: 1.5rem;
+  color: #ffd166;
+  margin: 8px 0;
+}
+
+.left-box h1 {
+  font-size: 3.5rem;
+  color: #06d6a0;
+  margin: 20px 0 10px;
+}
+
+.left-box p {
+  font-size: 1rem;
+  color: #adb5bd;
+  margin-bottom: 20px;
+}
+
+.score-details {
+  margin-top: 10px;
+}
+
+.score-details h3 {
+  margin-top: 16px;
+  color: #f5f5f5;
+  font-size: 1rem;
+}
+
+.score-details p {
+  margin: 4px 0;
+  font-size: 0.95rem;
+}
+
+.right-box {
+  flex: 1;
+  min-width: 300px;
+  background-color: #222;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.right-box img {
+  width: 100%;
+  max-width: 420px;
+  height: auto;
+  border-radius: 12px;
+  border: 2px solid #ff4c60;
+  box-shadow: 0 4px 12px rgba(255, 76, 96, 0.3);
+}
+
+/* Responsive layout */
+@media screen and (max-width: 768px) {
+  .club-box {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .left-box, .right-box {
+    padding: 20px;
+    text-align: center;
+  }
+
+  .left-box h1 {
+    font-size: 2.5rem;
+  }
+
+  .left-box h2 {
+    font-size: 1.2rem;
+  }
+}
+.slideshow-section {
+    text-align: center;
+    padding: 40px 0;
+    background-color: #111;
+    color: white;
+}
+
+.slideshow-container {
+    width: 50%; 
+    max-width: 100%;
+    aspect-ratio: 16 / 9;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+}
+
+.slide-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 12px;
+    animation: fade 1s ease-in-out;
+    background-color: rgb(0, 0, 0); 
+}
+
+@keyframes fade {
+    from { opacity: 0.4; }
+    to { opacity: 1; }
+}

@@ -1,0 +1,136 @@
+/* Base styles */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  overflow: hidden;
+  color: #fff;
+}
+
+.gohome{
+  margin: 30px 0px auto 30px;
+  padding: 5px;
+  border-radius: 4px;
+  background-color: #000000;
+  color: white;
+}
+.gohome:hover{
+  cursor:pointer;
+  background-color: #45c331;
+  transform: scale(0.98);
+  
+}
+.background-blur {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* background-image: url('../images/bg-login-2.jpg'); */
+  background-image: url('../images/background-login.jpg');
+  background-size: cover;
+  background-position: center;
+  filter: blur(2px);
+  z-index: -2;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: -1;
+}
+
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.login-form {
+  margin-left: 150  px;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 16px;
+  padding: 40px 30px;
+  width: 100%;
+  max-width: 400px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+  text-align: center;
+  transition: box-shadow 0.3s ease;
+  color: #333;
+}
+
+.login-form:hover {
+  box-shadow: 0 0 20px #0064b0;
+}
+
+.login-form h2 {
+  margin-bottom: 25px;
+  color: #0064b0;
+  font-size: 1.8rem;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.login-form input {
+  width: 95%;
+  padding: 14px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #ffffff;
+  color: #333;
+  font-size: 1rem;
+  transition: box-shadow 0.2s ease;
+}
+
+.login-form input:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px #0064b0;
+}
+
+.login-form button {
+  margin-top: 10px;
+  width: 100%;
+  padding: 14px;
+  font-size: 1.1rem;
+  background-color: #0064b0;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.login-form button:hover {
+  background-color: #004f8b;
+  transform: scale(1.03);
+}
+.login-form button:active {
+  background-color: #45c331;
+  transform: scale(0.98);
+}
+/* Signup text */
+.signup-text {
+  margin-top: 18px;
+  color: #555;
+  font-size: 0.95rem;
+}
+
+.signup-text a {
+  color: #ff4c60;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.signup-text a:hover {
+  text-decoration: underline;
+}
+.signup-text a:active {
+  color: #ff1a2b;
+}
