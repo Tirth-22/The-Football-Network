@@ -30,3 +30,4 @@ window.onload = function () {
 function gohome() {
   window.location.href = '../home-page.html';
 }
+

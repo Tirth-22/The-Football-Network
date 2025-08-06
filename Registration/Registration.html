@@ -4,14 +4,12 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Football Network - Register</title>
-  <link rel="stylesheet" href="Registration.css">
-
+  <link rel="stylesheet" href="registration.css" />
 </head>
 <body>
-  
   <div class="container">
     <h2>Join the Football Network</h2>
-   <form method="post" action="success.html" id="login-form">
+    <form id="registration-form" novalidate>
       <label for="fullname">Full Name</label>
       <input type="text" id="fullname" name="fullname" required />
 
@@ -20,6 +18,8 @@
 
       <label for="password">Password</label>
       <input type="password" id="password" name="password" required />
+      <meter max="4" id="password-strength-meter"></meter>
+      <p id="strength-text"></p>
 
       <label for="team">Favorite Football Team</label>
       <input type="text" id="team" name="team" />
@@ -44,6 +44,6 @@
     </form>
   </div>
 
-  <script src="Registration.js"></script>
+  <script src="registration.js"></script>
 </body>
 </html>
