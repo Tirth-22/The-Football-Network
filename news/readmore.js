@@ -22,3 +22,9 @@ document.addEventListener("DOMContentLoaded", () => {
         overlay.addEventListener("click", closePopup);
     }
 });
+
+// document.addEventListener("DOMContentLoaded",() => {
+//     const news = document.querySelector(".news-card").addEventListener("click",function(){
+//         alert("Hii it`s just for practice");
+//     });
+// })
